@@ -1,0 +1,56 @@
+@import '@/styles/variables.scss';
+
+@media only screen and (max-width: $breakpoint-small) {
+  #app {
+    .landing-title {
+      font-size: 4rem !important;
+    }
+    h2:not(.portfolio-title) {
+      font-size: 1.4rem;
+    }
+  }
+  .content {
+    grid-column: 1/12;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-xsmall) {
+  #app {
+    text-align: center;
+  }
+  #landing, #portfolio {
+    align-items: center;
+  }
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a:first-child {
+      margin: 0 12px !important;
+    }
+  }
+  .portfolio-item {
+    flex-flow: column;
+  }
+  .portfolio-details {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  .portfolio-img {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .portfolio-links {
+    justify-content: center;
+  }
+  #portfolio-link:first-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-xxsmall) {
+  .portfolio-header {
+    font-size: 2.75rem !important;
+  }
+}
